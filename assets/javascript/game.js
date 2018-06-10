@@ -30,11 +30,6 @@ function guessedLetters(array) {
     document.getElementById("current-word").textContent = array.join(" ");
 }
 
-//split compChoice into array
-
-// var compChoiceArray = compChoice.split("", compChoice.length);
-// console.log(compChoiceArray);
-
 //The remaining guesses begins at 13 
 
 function guessCounterD() {
@@ -48,17 +43,21 @@ guessCounterD();
 var userGuess = document.onkeyup = function(event) {
     var keyPress = event.key.toLowerCase();
 
+    //The letter the player guesses correctly appears in the blank spot of the current word box example "_ h _"
+
     if (compChoiceArray.includes(keyPress)) {
         for (i = 0; i < compChoiceArray.length; i++) {
             var indexCompChoice = compChoiceArray.indexOf(keyPress, i);
             compChoiceBlankArray[indexCompChoice] = keyPress;
             guessedLetters(compChoiceBlankArray);
         }
+        //checks to make sure the key pressed is a-z
     } else if (abcArray.includes(keyPress) !== true) {
         event.stopPropagation();
-
+        //checks to see if the user already used that key
     } else if (userKeys.includes(keyPress)) {
         event.stopPropagation();
+        //if user guess wrong then logs key in already guessed array and deprecates counter
     } else {
         document.getElementById("guess-counter").textContent = " " + guessCounter--;
         userKeys.push(keyPress);
@@ -67,7 +66,6 @@ var userGuess = document.onkeyup = function(event) {
     }
 }
 
-//The letter the player guesses correctly appears in the blank spot of the current word box example "_ h _" 
 
 //If the player runs out of guesses then game resets and alerts player that they have lost 
 
