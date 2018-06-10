@@ -32,11 +32,8 @@ function guessedLetters(array) {
 
 //The remaining guesses begins at 13 
 
-function guessCounterD() {
-    document.getElementById("guess-counter").textContent = " " + guessCounter;
-}
 
-guessCounterD();
+document.getElementById("guess-counter").textContent = " " + guessCounter;
 
 //The letter the player guesses incorrectly appears in the already guessed box
 
