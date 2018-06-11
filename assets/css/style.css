@@ -1,0 +1,54 @@
+body {
+    background-image: url("../images/background.jpg");
+}
+
+img {
+    height: 329px;
+    width: 306px;
+}
+
+.row {
+    background-color: white;
+}
+
+#start {
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+
+#win-row {
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+
+#losses-row {
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+
+#current-word-row {
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+
+#current-word {
+    border: 1px solid red;
+    margin-bottom: 5%;
+    font-size: 25px;
+}
+
+#number-of-guesses {
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+
+#already-guessed {
+    border: 1px solid red;
+    margin-bottom: 5%;
+}
+
+#guessed-letters {
+    border: 1px solid red;
+    margin-bottom: 5%;
+    font-size: 25px;
+}
