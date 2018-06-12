@@ -1,6 +1,7 @@
 //establish vars up front
 
-var tggArray = ["Previa", "Rikerlean", "Shimoda", "Entrepreneur", "Spacebutthole", "Wesley", "Mclaughlingroup", "Yeager"];
+var tggArray = ["Wesley", "Yeager"];
+// var tggArray = ["Previa", "Rikerlean", "Shimoda", "Entrepreneur", "Spacebutthole", "Wesley", "Mclaughlingroup", "Yeager"];
 var wins = 1;
 var losses = 1;
 var userKeys = [];
@@ -22,6 +23,7 @@ function restartGame() {
     compChoiceArray = compChoice.split("", compChoice.length);
     createBlankSpots(compChoiceArray);
     selectImage(compChoice);
+    document.getElementById("audio").removeChild(audio);
     selectAudio(compChoice);
     guessCounter = 13;
     setGuessCounter();
