@@ -1,7 +1,6 @@
 //establish vars up front
 
-var tggArray = ["Wesley", "Yeager"];
-// var tggArray = ["Previa", "Rikerlean", "Shimoda", "Entrepreneur", "Spacebutthole", "Wesley", "Mclaughlingroup", "Yeager"];
+var tggArray = ["Previa", "Rikerlean", "Shimoda", "Entrepreneur", "Spacebutthole", "Wesley", "Mclaughlingroup", "Yeager"];
 var wins = 1;
 var losses = 1;
 var userKeys = [];
